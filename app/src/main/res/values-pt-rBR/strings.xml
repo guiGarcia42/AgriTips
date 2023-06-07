@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AgroDicas</string>
+
+    <!--  Drawer Strings  -->
+
+    <string name="subtitle">Sistema de Monitoramento de Fertilização</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_fertilization">Fertilização</string>
+    <string name="menu_settings">Configurações</string>
+
+    <!--  Settings Strings  -->
+
+    <string name="change_theme_text_title">Alterar Temas</string>
+    <string name="change_theme_text_description">Pressione o botão se você quiser trocar de tema</string>
+    <string name="button_change_theme_text">Alterar Tema</string>
+    <string name="change_language_text_title">Alterar Linguagens</string>
+    <string name="change_language_text_description">Pressione o botão se você quiser trocar de Linguagem</string>
+    <string name="button_change_language_text">Alterar Linguagem</string>
+
+
+</resources>
