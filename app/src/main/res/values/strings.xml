@@ -1,11 +1,5 @@
 <resources>
     <string name="app_name">AgriTips</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
     <string name="list_fertilization">List Fertilization Agenda</string>
 
     <!--  Drawer Strings  -->
@@ -24,4 +18,23 @@
     <string name="change_language_text_description">Press this button if you want to change the Language</string>
     <string name="button_change_language_text">Change Language</string>
 
+    <!--  Settings Strings  -->
+    <string name="app_description">Application for monitoring and scheduling fertilization of plantations.</string>
+    <string name="crop_options">This app cover three different crop species:\n- Beans\n- Rice\n-Wheat </string>
+
+    <!--  Fertilization Strings  -->
+    <string name="fertilization_title">Schedule Fertilizations</string>
+    <string name="fertilization_description">According to the AI analysis, the following crops need fertilization, select the options you want to schedule for tomorrow:</string>
+    <string name="bean_plantation">lot 2 - Bean Plantation</string>
+    <string name="rice_plantation">lot 5 - Rice Plantation</string>
+    <string name="wheat_plantation">lot 7 - Wheat Plantation</string>
+    <string name="button_schedule">Schedule</string>
+
+    <!-- List Fertilization Strings -->
+    <string name="list_fertilization_title">Scheduled Fertilizations</string>
+    <string name="beans_scheduled">Fertilization Scheduled to the Beans Plantation</string>
+    <string name="rice_scheduled">Fertilization Scheduled to the Rice Plantation</string>
+    <string name="wheat_scheduled">Fertilization Scheduled to the Wheat Plantation</string>
+    <string name="default_list">There is no Scheduled Fertilizations.\nPlease, come back and\nschedule the recommended fertilizations.</string>
+    <string name="start_list">Here it is all the Scheduled Fertilizations:\n</string>
 </resources>

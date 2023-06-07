@@ -36,7 +36,7 @@ class SettingsFragment : Fragment() {
         val toggleLanguageButton: Button = binding.buttonChangeLanguage
         toggleLanguageButton.setOnClickListener {
             isPortugueseEnabled = !isPortugueseEnabled
-            changeLanguage()
+            changeLanguage(isPortugueseEnabled)
         }
 
 
@@ -57,11 +57,11 @@ class SettingsFragment : Fragment() {
         AppCompatDelegate.setDefaultNightMode(nightMode)
     }
 
-    private fun changeLanguage() {
+    private fun changeLanguage(isPortugueseEnabled: Boolean) {
         val locale = if (isPortugueseEnabled) {
             Locale("pt")
         } else {
-            Locale.getDefault()
+            Locale("")
         }
 
         val config = Configuration(resources.configuration)

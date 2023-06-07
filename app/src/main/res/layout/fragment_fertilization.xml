@@ -9,81 +9,75 @@
 
     <TextView
         android:id="@+id/titulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fertilização Agendada"
-        android:textSize="29sp"
-        android:textStyle="bold"
+        android:text="@string/fertilization_title"
         app:layout_constraintBottom_toTopOf="@+id/subtitulo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        style="@style/title_style" />
 
     <TextView
         android:id="@+id/subtitulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="De acordo com a analise da IA, as seguintes plantações precisam de fertilização, seleciona as que deseja agendar para amanhã"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toTopOf="@+id/feijao"
+        android:text="@string/fertilization_description"
+        style="@style/subtitle_style"
+        app:layout_constraintBottom_toTopOf="@+id/beans"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        android:gravity="center"
         app:layout_constraintTop_toBottomOf="@+id/titulo"
         app:layout_constraintVertical_bias="0.5" />
 
-    <Switch
-        android:id="@+id/feijao"
-        android:textSize="18sp"
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/beans"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lote 2 - Colheita de Feijão"
-        app:layout_constraintBottom_toTopOf="@+id/arroz"
+        android:text="@string/bean_plantation"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/rice"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subtitulo"
         app:layout_constraintVertical_bias="0.5" />
 
-    <Switch
-        android:id="@+id/arroz"
-        android:textSize="18sp"
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/rice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lote 7 - Colheita de Arroz"
-        app:layout_constraintBottom_toTopOf="@+id/Trigo"
+        android:text="@string/rice_plantation"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/wheat"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/feijao"
+        app:layout_constraintTop_toBottomOf="@+id/beans"
         app:layout_constraintVertical_bias="0.5" />
 
-    <Switch
-        android:id="@+id/Trigo"
-        android:textSize="18sp"
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/wheat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lote 9 - Colheita de Trigo"
+        android:text="@string/wheat_plantation"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/arroz"
+        app:layout_constraintTop_toBottomOf="@+id/rice"
         app:layout_constraintVertical_bias="0.5" />
-
 
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Confirmar"
+        android:text="@string/button_schedule"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Trigo"
+        app:layout_constraintTop_toBottomOf="@+id/wheat"
         app:layout_constraintVertical_bias="0.5" />
 </androidx.constraintlayout.widget.ConstraintLayout>

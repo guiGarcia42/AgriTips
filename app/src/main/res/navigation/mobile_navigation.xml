@@ -24,8 +24,8 @@
         android:label="@string/menu_fertilization"
         tools:layout="@layout/fragment_fertilization">
         <action
-            android:id="@+id/action_nav_gallery_to_listaFertilizacaoFragment"
-            app:destination="@id/nav_list_fertilization" />
+            android:id="@+id/action_nav_fertilization_to_listFertilizationActivity"
+            app:destination="@id/listFertilizationActivity" />
     </fragment>
 
     <fragment
@@ -33,9 +33,9 @@
         android:name="com.example.agrotips.ui.settings.SettingsFragment"
         android:label="@string/menu_settings"
         tools:layout="@layout/fragment_settings" />
-    <fragment
-        android:id="@+id/nav_list_fertilization"
-        android:name="com.example.agrotips.ListFertilizationFragment"
+    <activity
+        android:id="@+id/listFertilizationActivity"
+        android:name="com.example.agrotips.ListFertilizationActivity"
         android:label="@string/list_fertilization"
-        tools:layout="@layout/fragment_list_fertilization" />
+        tools:layout="@layout/activity_list_fertilization" />
 </navigation>

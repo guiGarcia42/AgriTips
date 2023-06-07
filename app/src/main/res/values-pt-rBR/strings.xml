@@ -18,5 +18,23 @@
     <string name="change_language_text_description">Pressione o botão se você quiser trocar de Linguagem</string>
     <string name="button_change_language_text">Alterar Linguagem</string>
 
+    <!--  Settings Strings  -->
+    <string name="app_description">Aplicativo para monitoramento e agendamento de fertilização de plantações.</string>
+    <string name="crop_options">Esse app suporta três tipos diferentes de species:\n- Feijão\n- Arroz\n- Trigo </string>
 
+    <!--  Fertilization Strings  -->
+    <string name="fertilization_title">Agendar Fertilização</string>
+    <string name="fertilization_description">De acordo com a análise da IA, as seguintes plantações precisam de fertilização, selecione as opções que deseja agendar para amanhã:</string>
+    <string name="bean_plantation">lote 2 - Plantação de Feijão</string>
+    <string name="rice_plantation">lote 5 - Plantação de Arroz</string>
+    <string name="wheat_plantation">lote 7 - Plantação de Trigo</string>
+    <string name="button_schedule">Agendar</string>
+
+    <!-- List Fertilization Strings -->
+    <string name="list_fertilization_title">Fertilizações Agendadas</string>
+    <string name="beans_scheduled">Fertilização programada para a plantação de feijão</string>
+    <string name="rice_scheduled">Fertilização programada para a plantação de arroz</string>
+    <string name="wheat_scheduled">Fertilização programada para a plantação de trigo</string>
+    <string name="default_list">Não há fertilização programada.\nPor favor, volte e\nagende as fertilizações recomendadas.</string>
+    <string name="start_list">Aqui estão todas as Fertilizações Programadas:\n</string>
 </resources>
