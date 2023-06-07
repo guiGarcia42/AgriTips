@@ -8,25 +8,27 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
+import com.example.agrotips.R
 import com.example.agrotips.databinding.FragmentSettingsBinding
 import java.util.*
 
 class SettingsFragment : Fragment() {
-
-    private var _binding: FragmentSettingsBinding? = null
-    private val binding get() = _binding!!
-
-    private var isDarkThemeEnabled = false
-    private var isPortugueseEnabled = false
-
+    private lateinit var binding: FragmentSettingsBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentSettingsBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+        return inflater.inflate(R.layout.fragment_settings, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding = FragmentSettingsBinding.bind(view)
+
+        var isDarkThemeEnabled = false
+        var isPortugueseEnabled = false
 
         val toggleThemeButton: Button = binding.buttonChangeTheme
         toggleThemeButton.setOnClickListener {
@@ -38,14 +40,6 @@ class SettingsFragment : Fragment() {
             isPortugueseEnabled = !isPortugueseEnabled
             changeLanguage(isPortugueseEnabled)
         }
-
-
-        return root
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
     }
 
     private fun applyTheme(isDarkThemeEnabled: Boolean) {

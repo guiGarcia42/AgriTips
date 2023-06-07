@@ -17,19 +17,22 @@ import com.example.agrotips.models.Agenda
 
 class FertilizationFragment : Fragment() {
 
-    private var _binding: FragmentFertilizationBinding? = null
+    private lateinit var binding: FragmentFertilizationBinding
     private lateinit var agenda: Agenda
 
-    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        return inflater.inflate(R.layout.fragment_fertilization, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         agenda = Agenda(mutableListOf())
-        _binding = FragmentFertilizationBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+        binding = FragmentFertilizationBinding.bind(view)
 
         binding.beans.setOnCheckedChangeListener { _,isChecked ->
             updateScheduledCrops(isChecked, getString(R.string.beans_scheduled))
@@ -46,13 +49,6 @@ class FertilizationFragment : Fragment() {
             intent.putExtra("AGENDA", agenda)
             startActivity(intent)
         }
-
-        return root
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
     }
 
     fun updateScheduledCrops(isChecked: Boolean, crop: String){
